@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuario: one
+  livro: one
+  preco_total: 9.99
+  data_aluguel: 2026-02-25
+  data_prevista_devolucao: 2026-02-25
+  data_devolucao: 2026-02-25
+  status: 1
+  comentario: MyString
+
+two:
+  usuario: two
+  livro: two
+  preco_total: 9.99
+  data_aluguel: 2026-02-25
+  data_prevista_devolucao: 2026-02-25
+  data_devolucao: 2026-02-25
+  status: 1
+  comentario: MyString
