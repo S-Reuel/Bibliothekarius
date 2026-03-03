@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  quantidade_total: 1
+  quantidade_disponivel: 1
+  preco: 9.99
+  data_publicacao: 2026-02-25
+  autor: MyString
+  resumo: MyText
+  nivel_preferencia: 1
+
+two:
+  titulo: MyString
+  quantidade_total: 1
+  quantidade_disponivel: 1
+  preco: 9.99
+  data_publicacao: 2026-02-25
+  autor: MyString
+  resumo: MyText
+  nivel_preferencia: 1

@@ -1,0 +1,57 @@
+<%= form_with(model: usuario) do |form| %>
+  <% if usuario.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+
+      <ul>
+        <% usuario.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :ra, style: "display: block" %>
+    <%= form.text_field :ra %>
+  </div>
+
+  <div>
+    <%= form.label :telefone, style: "display: block" %>
+    <%= form.text_field :telefone %>
+  </div>
+
+  <div>
+    <%= form.label :password, style: "display: block" %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div>
+    <%= form.label :password_confirmation, style: "display: block" %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+
+  <div>
+    <%= form.label :funcao, style: "display: block" %>
+    <%= form.select :funcao, ['gestor', 'adm', 'usuario'] %>
+  </div>
+
+  <div>
+    <%= form.label :reputacao, style: "display: block" %>
+    <%= form.select :reputacao, ['pessima', 'ruim', 'neutra', 'boa', 'otima'] %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

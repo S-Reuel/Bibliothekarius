@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Usuario livros" %>
+
+<h1>Usuario livros</h1>
+
+<div id="usuario_livros">
+  <% @usuario_livros.each do |usuario_livro| %>
+    <%= render usuario_livro %>
+    <p>
+      <%= link_to "Show this usuario livro", usuario_livro %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New usuario livro", new_usuario_livro_path %>

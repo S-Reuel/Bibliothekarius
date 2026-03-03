@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @usuario_livro %>
+
+<div>
+  <%= link_to "Edit this usuario livro", edit_usuario_livro_path(@usuario_livro) %> |
+  <%= link_to "Back to usuario livros", usuario_livros_path %>
+
+  <%= button_to "Destroy this usuario livro", @usuario_livro, method: :delete %>
+</div>
